@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "postinstall": "npm --prefix exporter install && npm --prefix exporter-all install && npm --prefix exporter-old install && npm --prefix importer install"
+  },
+  "dependencies": {
+    "typescript": "^4.5.0-dev.20211012"
+  },
+  "type": "module"
+}

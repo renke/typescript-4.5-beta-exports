@@ -1,0 +1,25 @@
+{
+  "name": "exporter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.5.0-dev.20211012"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./lib/main.js",
+      "types": "./lib/main.d.ts"
+    },
+    "./feature": {
+      "import": "./lib/feature.js",
+      "types": "./lib/feature.d.ts"
+    }
+  }
+}
